@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSVERSAL</title>
+    <link rel="stylesheet" href="estile.css">
+</head>
+<style>
+    /*estilos boton*/
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image-container img {
+        display: block;
+        width: 100%;
+    }
+
+    .button-on-image {
+        position: absolute;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Posiciones específicas para los botones */
+    .button1 {
+        /*entrada*/
+        top: 15%;
+        /* Ajusta el valor para la posición vertical */
+        left: 0%;
+        /* Ajusta el valor para la posición horizontal */
+    }
+
+    .button2 {
+        /*direccion*/
+        top: 25%;
+        left: 30%;
+    }
+
+    .button3 {
+        /*explanada*/
+        bottom: 47%;
+        left: 30%;
+    }
+
+    .button4 {
+        /*laboratorio 1*/
+        bottom: 30%;
+        left: 35%;
+    }
+
+    .button5 {
+        /*industria*/
+        bottom: 9%;
+        left: 33%;
+    }
+
+    /*se trabajaran los demas botones el lado derecho*/
+    .button6 {
+        /*mesas de ajedrez*/
+        bottom: 63%;
+        right: 35%;
+    }
+
+    .button7 {
+        /*cafeteria*/
+        bottom: 46%;
+        right: 33%;
+    }
+
+    .button8 {
+        /*lab 5*/
+        bottom: 25%;
+        right: 33%;
+    }
+
+    .button9 {
+        /*los de primero*/
+        bottom: 2%;
+        right: 33%;
+    }
+
+    .button10 {
+        /*cancha*/
+        bottom: 55%;
+        right: 11%;
+    }
+
+    .button11 {
+        /*donde yo estudio*/
+        bottom: 25%;
+        right: 7%;
+    }
+
+    .button12 {
+        /*quimica*/
+        bottom: 3%;
+        right: 10%;
+    }
+
+    /* Estilos para el iframe */
+    .iframe-container {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        display: none;
+        /* Oculto por defecto */
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    h2 {
+        text-align: left;
+        color: darkblue;
+        font-size: 25px;
+        background-color: #0077ff5d;
+        border: black;
+        border-radius: 25px;
+        margin: 0 auto;
+        border-color: darkblue;
+    }
+
+    p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <!--este es e emcabezado de la pagina -->
+    <header>
+        <img src="lg.jpg" alt="logo">
+        <section>
+            <h1 class="titulo">P.TRANSVERSAL</h1>
+        </section>
+    </header>
+    <!--CATALOGO DE MENU-->
+    <nav>
+        <button class="boton"><a href="index.html">Inicio</a></button>
+        <button class="boton"><a href="maqueta.html">Maqueta</a></button>
+        <button class="boton"><a href="transversal.html">Proyecto transversal</a></button>
+        <button class="boton"><a href="nosotros.html">Cultura Conalep</a></button>
+        <button class="boton"><a href="docs.html">Documentación</a></button>
+        <button class="boton"><a href="somos.html">¿Quienés somos?</a></button>
+        <button class="boton"><a href="formulario.html">Calificanos</a></button>
+    </nav>
+    <!--proyecto oscar-->
+    <div>
+        <section>
+            <h2>EXPLORA NUESTRO INSTITUTO.</h2>
+            <p>
+                Es un honor darles la bienvenida a esta institución CONALEP Ixtapaluca. Somos un equipo del grupo 601 y
+                seremos quienes te brindaran información sobre la página web, Hoy nos reunimos aquí para presentarte un
+                recorrido de la escuela de forma virtual.
+                Durante los próximos minutos, tendrán la oportunidad de participar a visitar nuestro sitio web.
+                Esperamos que encuentren inspiración, aprendizaje y crecimiento aquí. Juntos, abarcaremos nuestros
+                objetivos.
+                Sin más preámbulos, ¡comencemos!
+            <h3>MAPEO ESCOLAR</h3>
+            A continuación encontraras un mapa de las escuela con botones correspondientes a cada edificio del
+            instituto, en cada botón si usted hace clic sobre uno de ellos se mostrara un panel en la parte inferior con
+            una imagen panorámica en el cual podrá interactuar con ello, lo invitamos que haga la prueba.
+            </p>
+            <b>De favor presionar el boton de la area que quiera visitar <br><br></b>
+            <center>
+                <div class="image-container">
+                    <img src="imagenes/mapero.png" alt="Imagen">
+                    <!--CREACION DE LOS BOTONES PARA MOSTRAR LA SIMAGENES PARONAMICAS-->
+                    <button class="button-on-image button1"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/AS3Zda9tAx')">ENTRADA</button>
+                    <button class="button-on-image button2"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/Cv8JK7T2J1')">DIRECCIÓN</button>
+                    <button class="button-on-image button3"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/MOL2cCPnn1')">EXPLANADA</button>
+                    <button class="button-on-image button4"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/ysbKPaLVPB')">EDIFICIO C</button>
+                    <button class="button-on-image button5"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/7T5hZziUrL')">INDUSTRIA</button>
+                    <button class="button-on-image button6"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/dXvDI3KU3a')">BODEGAS</button>
+                    <button class="button-on-image button7"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/zDTRP4QzHq')">CAFETERIA</button>
+                    <button class="button-on-image button8"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/otwRe2lEXM')">EDIFICIO F</button>
+                    <button class="button-on-image button9"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/JJlGchgFYJ')">EDIFICIO H</button>
+                    <button class="button-on-image button10"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/RtbgtLERLE')">CANCHAS</button>
+                    <button class="button-on-image button11"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/tILPPXxidQ')">EDIFICIO B</button>
+                    <button class="button-on-image button12"
+                        onclick="mostrarIframe('https://panoraven.com/es/embed/ttNUaljFdz')">QUIMICA</button>
+                </div>
+            </center>
+            <hr>
+            <div class="iframe-container" id="iframeContainer">
+                <iframe id="iframe" src=""></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+<!--funciones para la imagen 360-->
+<script>
+    function mostrarIframe(url) {
+        var iframeContainer = document.getElementById('iframeContainer');
+        var iframe = document.getElementById('iframe');
+        iframe.src = url;
+        iframeContainer.style.display = 'block';
+    }
+</script>
+
+</html>

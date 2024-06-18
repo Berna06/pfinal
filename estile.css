@@ -1,0 +1,144 @@
+/*estilos de solo index*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+header section {
+    float: right;
+    background-color: #333;
+    text-align: center;
+    margin-left: auto;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header img {
+    float: left;
+    height: 185px;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/*los siguientes estilos son animaciones */
+.boton {
+    background-color: #666;
+    /* Color inicial */
+    color: #fff;
+    /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    /* Transición suave del color de fondo */
+}
+
+.boton:hover {
+    background-color: #0077ff5d;
+    /* Color al pasar el cursor */
+}
+
+/*animacion titutos*/
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.titulo {
+    color: #f0f0f0;
+    /* Color del texto */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    /* Simula el cursor de la máquina de escribir */
+    animation: typing 1s steps(40) forwards;
+    /* Ejecutar la animación una vez y detenerla al final */
+}
+
+/*ya no se que hacer*/
+@media (min-width: 600px) {
+    .item {
+        flex: 1 1 48%;
+        /* El ítem ocupa el 48% del ancho en pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+        flex: 1 1 23%;
+        /* El ítem ocupa el 23% del ancho en pantallas grandes */
+    }
+}
+
+/*agragr estilos para el menu de maqueta*/
+.contenidomaque {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    text-align: justify;
+    margin: auto;
+}
+
+#parte1{
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    background-color: #0077ff5d;
+}
+#waos h3{
+    text-align: left;
+    color: darkblue;
+    font-size: 25px;
+    background-color: #0077ff5d; 
+    border: black;
+    border-radius: 25px;
+    margin: 0 auto;
+    border-color: darkblue;
+}
+

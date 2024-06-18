@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos</title>
+    <link rel="stylesheet" href="estile.css">
+</head>
+<style>
+    
+    /*estilos del modal*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+        margin: 15% auto;
+        padding: 20px;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .solot {
+        text-align: left;
+        color: darkblue;
+        font-size: 25px;
+        background-color: #0077ff5d;
+        border: black;
+        border-radius: 25px;
+        margin: 0 auto;
+        border-color: darkblue;
+    }
+
+    p {
+        text-align: justify;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+</style>
+
+<body>
+    <!--este es e emcabezado de la pagina -->
+    <header>
+        <img src="lg.jpg" alt="logo">
+        <section>
+            <h1 class="titulo">Cultura Conalep</h1>
+        </section>
+    </header>
+    <!--CATALOGO DE MENU-->
+    <nav>
+        <button class="boton"><a href="index.html">Inicio</a></button>
+        <button class="boton"><a href="maqueta.html">Maqueta</a></button>
+        <button class="boton"><a href="transversal.html">Proyecto transversal</a></button>
+        <button class="boton"><a href="nosotros.html">Cultura Conalep</a></button>
+        <button class="boton"><a href="docs.html">Documentación</a></button>
+        <button class="boton"><a href="somos.html">¿Quienés somos?</a></button>
+        <button class="boton"><a href="formulario.html">Calificanos</a></button>
+    </nav>
+    <!--presentar el ambito conalep -->
+    <div>
+        <section>
+            <h1 class="solot">NUESTRA CULTURA CONALEP</h1>
+            <p>
+                Nuestra misión, visión, políticas y valores trascienden del papel; son el norte que orienta cada paso y
+                decisión que tomamos. Te extendemos una cordial invitación para explorar en profundidad estos pilares
+                fundamentales que moldean nuestra identidad y nuestras aspiraciones. Descubre cómo nos comprometemos a
+                generar un impacto positivo en la integración social. Te animamos a sumergirte en el espíritu de nuestro
+                instituto a través de un video revelador que captura la esencia de lo que nos hace distintivos. Dale
+                clic a la imagen y experimenta por ti mismo la singularidad de CONALEP. <br><br>
+                En CONALEP late un conjunto de principios que nos impulsa hacia la excelencia. La misión, visión,
+                políticas y valores no son solo palabras en una simple hoja; son la brújula que guía cada decisión y
+                acción que tomamos. Te invitamos a descubrir cómo estos elementos esenciales definen quiénes somos y
+                aspiramos ser, y cómo nos esforzamos por marcar una diferencia positiva en la integración de la
+                sociedad. Sumérgete en el alma de nuestro instituto y ve por ti mismo lo que nos hace únicos.
+           <br><br><br>
+           Te invitamos a que conozcas este ámbito conalep en el siguinete video:
+            </p>
+            <div style="text-align: center; ">
+                <button onclick="mostrarModal()">
+                    <img style="height: 300px;" src="imagenes/SOMOSCONALEP_portada.jpg" alt="apertura">
+                </button>
+                <!-- Modal -->
+                <div id="miModal" class="modal">
+                    <div class="modal-content">
+                        <span onclick="cerrarModal()" style="float: right; cursor: pointer;">&times;</span>
+                        <h2>CULTURA CONALEP</h2>
+                        <video src="videos/bloqueo.mp4" controls width="500" height="auto"></video>
+                        <p>Disfruta del video y te invitamos a que conozcas a los creadores de este maravilloso trabajo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr>
+    
+    <script>
+        // Función para mostrar el modal
+        function mostrarModal() {
+            document.getElementById("miModal").style.display = "block";
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            document.getElementById("miModal").style.display = "none";
+        }
+
+        // Mostrar el modal automáticamente cuando la página se haya cargado completamente
+        window.onload = function () {
+            mostrarModal();
+        };
+    </script>
+</body>
+</html>
