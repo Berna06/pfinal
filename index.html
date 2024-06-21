@@ -58,6 +58,90 @@
         text-align: justify;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     }
+
+    /*para las noticias */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .image-container {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        max-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .image-container h1 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .image-container p {
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    .image-container .noti {
+        margin-top: 10px;
+    }
+
+    .image-container .noti a {
+        text-decoration: none;
+        color: white;
+        background-color: #007BFF;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .image-container .noti a:hover {
+        background-color: #0056b3;
+    }
+
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-item img {
+        max-width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer-item span {
+        font-size: 0.9em;
+    }
 </style>
 
 <body>
@@ -129,19 +213,105 @@
             <a href="nosotros.html"><img style="height: 300px; width: auto;" src="imagenes/SOMOSCONALEP_portada.jpg"
                     alt="culturaconalep"></a>
         </center>
-        <h1>NOTICIAS CONALEP</h1>
+        <!--OFERTA EDUCATIVA CONALEP IXTAPALUCA-->
+        <h1>VISITA NUESTRAS OFERTAS EDUCATIVAS DE CONALEP Ixtapaluca</h1>
+        <center>
+            <a
+                href="https://www.conalepmex.edu.mx/educacion/planteles.html?view=article&id=84:236-ixtapaluca&catid=10:planteles">
+                <img src="imagenes/oferta.png" alt="oferta"></a>
+        </center>
+        <h1>NOTICIAS CONALEP Estado de México</h1>
         enterate de lo nuevo que esta pasando en conalep con conexion@conalepmex.edu.mx
         <br>
         o por las noticias oficiales del instituto de conalep
         <br>
-        <embed src="https://www.conalepmex.edu.mx/alumnos/noticias.html" width="100%" height="600px">
-    </p>
+        <center>
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="imagenes/no1.png" alt="dual">
+                    </a>
+                    <h1>Emprende Dual 2024</h1>
+                    <p>
+                        San Pedro Totoltepec, Estado de México a 30 de mayo del 2024. La feria EMPRENDE DUAL 2024,
+                        celebrada en
+                        el Centro de Convenciones de Toluca, se destacó como un evento clave para la innovación y las
+                        oportunidades en la región.
+                    </p>
+                    <button class="noti">
+                        <a href="https://www.conalepmex.edu.mx/alumnos/noticias/emprende-dual-2024.html">Leer más...</a>
+                    </button>
+                </div>
+                <div class="image-container">
+
+                    <img src="imagenes/no2.png" alt="noticia2">
+                    </a>
+                    <h1>Inauguración de la exposición fotográfica</h1>
+                    <p>
+                        Una celebración y reflexión ante una manifestación visual del compromiso y el esfuerzo que se ha
+                        dedicado a la educación de nuestro país durante la última década, la exposición fotográfica
+                        itinerante “Construyendo comunidad, 10 años de telebachillerato comunitario”, no es solo una
+                        colección de imágenes sino un testimonio vivo del poder transformador de la educación, cada
+                        fotografía es más que una simple imagen
+                    </p>
+                    <button class="noti">
+                        <a
+                            href="https://www.conalepmex.edu.mx/alumnos/noticias/inauguración-de-la-exposición-fotográfica-“construyendo-comunidad,-10-años-de-telebachillerato-comunitario”.html">Leer
+                            más...</a>
+                    </button>
+                </div>
+                <div class="image-container">
+                    <img src="imagenes/no3.png" alt="noticia3">
+                    </a>
+                    <h1>Evento Día de La Maestra y del Maestro</h1>
+                    <p>
+                        Destacó que en el Estado de México se brinda educación con un alto sentido humanístico, qué
+                        caracteriza a la Nueva Escuela Mexicana, todo gracias al trabajo coordinado en el Colegio
+                        Estatal y los 39 planteles que lo integran, así como la Dirección General.
+                    </p>
+                    <button class="noti">
+                        <a
+                            href="https://www.conalepmex.edu.mx/alumnos/noticias/evento-día-de-la-maestra-y-del-maestro.html">Leer
+                            más...</a>
+                    </button>
+                </div>
+            </div>
+        </center>
+        </p>
     </section>
-    <!--pie de pagina -->
+    <!--pie de pagina y redes sociales  -->
     <div>
-        <section>
-            <p>&copy; 2024 NET-LEP. Todos los derechos reservados.</p>
+
+        <section class="footer">
+            <h5>Contactanos</h5>
+            <div class="footer-container">
+                <p> correo:ixtapaluca@conalepmex.edu.mx <br>
+                    Teléfonos: 5573150061, 5573150605
+                    </p>
+                <div class="footer-item">
+                    <a href="https://www.conalepmex.edu.mx/educacion/planteles.html?view=article&id=84:236-ixtapaluca&catid=10:planteles">
+                        <img src="imagenes/logocona.png" alt="Logo Otra Ejemplo">
+                        <span>Sitio conalep</span>
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://www.facebook.com/ConalepIxtapal/?locale=es_LA">
+                        <img src="imagenes/facebook.png" alt="Logo Conalep">
+                        <span>Conalep ixtapaluca</span>
+                    </a>
+                </div>
+
+                <div class="footer-item">
+                    <a href="https://www.instagram.com/p/CmR0BN_JZs5/">
+                        <img src="imagenes/insta.jpeg" alt="Logo Ejemplo">
+                        <span>Conalep Ixtapaluca</span>
+                    </a>
+                </div>
+
+
+
+            </div>
         </section>
+
     </div>
 
 
